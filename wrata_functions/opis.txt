@@ -1,0 +1,50 @@
+Program do obs³ugi zestawu edukacyjnego Inteligentne Miasto (IM)
+
+Sterownik: ArduinoUno z wgranym oprogramowaniem Standard Firmata i nak³adk¹ (shieldem) IM.
+Do sterownika mo¿na maksymalnie pod³¹czyæ cztery urz¹dzenia (za pomoc¹ szeœcio¿y³owych przewodów z gniazdami IDC), 
+wybrane z siedmiu elementów:
+* latarnia uliczna - diody LED (2 x po 3 szt.) i fototranzystor do pomiaru natê¿enia œwiat³a
+* czujnik przejazdu - dioda LED IR (emituj¹ca promieniowanie podczerwone) i fototranzystor wykrywaj¹cy wi¹zkê promieni IR
+* zapora kolejowa - serwo umo¿liwiaj¹ce ustawienie zapory pod dowolnym k¹tem (90 - zapora otwarta, 0 lub 180 - zamkniêta)
+  i sygnalizacja dŸwiêkowa (buzzer)
+* sygnalizator kolejowy (dla niestrze¿onego przejazdu) - dwie czerwone diody LED
+* sygnalizator œwietlny dla pieszych - diody czerwona i zielona oraz przycisk ¿¹dania zmiany stanu sygna³ów
+* sygnalizator œwietlny dla pojazdów (2 szt.) -  diody czerwona, ¿ó³ta i zielona
+
+BIBLIOTEKA:
+
+city.py 
+Modu³ wykorzystywany jest przez pozosta³e modu³y. £¹czy program ze sterownikiem Arduino przez port szeregowy,
+wykrywa urz¹dzenia pod³¹czone do portów sterownika i wyœwietla informacje o tych urz¹dzeniach.
+Tworzy zmienn¹ globaln¹ wykorzystywan¹ w module 'barrier' do pamiêtania stanu zapory kolejowej.
+
+barrier.py
+Modu³ obs³uguje dwa urz¹dzenia: zaporê kolejow¹ i czujnik przejazdu.
+Dostêpne w moduje funkcje umo¿liwiaj¹ zamykanie i otwieranie zapory kolejowej, generowanie sygna³u
+ostrzegawczego (buzzer w uk³adzie zapory) i wykrywanie przeje¿d¿aj¹cego poci¹gu (czujnik przejazdu).
+
+lamp.py
+Modu³ obs³uguje latarniê uliczn¹ i jego funkcje umo¿liwiaj¹ w³¹czanie latarni z pe³n¹ moc¹ lub z po³ow¹ mocy
+(tryb ekonomiczny), wy³¹czanie latarni oraz wykrywanie poziomu natê¿enia œwiat³a (ciemno/jasno).
+
+pedestrian_light.py
+Modu³ obs³uguje sygnalizator œwietlny dla pieszych z przyciskiem ¿¹dania zmiany œwiat³a.
+
+traffic_light.py
+Modu³ obs³uguje pierwszy (wpiêty do portu o ni¿szym numerze) sygnalizator drogowy
+lub pojedynczy sygnalizator (zestaw zawiera dwa sygnalizatory drogowe).
+
+traffic_light2.py
+Modu³ obs³uguje drugi (wpiêty do portu o wy¿szym numerze) sygnalizator drogowy
+lub pojedynczy sygnalizator.
+
+train_light.py
+Modu³ obs³uguje œwiat³a na niestrze¿onym przejeŸdzie kolejowym.
+
+PRZYK£ADY STEROWANIA ELEMENTAMI IM:
+test_barrier.py
+test_lamp.py
+test_pedestrian_light.py
+test_traffic_light_1.py
+test_traffic_light_2.py
+test_train_light.py
