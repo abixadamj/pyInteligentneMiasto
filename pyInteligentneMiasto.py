@@ -4,7 +4,7 @@
 #  pyIntelligentCity.py
 #  
 #  Copyright 2017 ABIX Adam Jurkiewicz <python@cyfrowaszkola.waw.pl>
-#  Portions code Copyright 2017 Wojciech <wrata@onet>
+#  Portions code (functions) Copyright 2017 Wiesław Rychlicki <wrata@poczta.onet.pl>
 
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -22,6 +22,13 @@
 #  MA 02110-1301, USA.
 #  
 #  
+
+# TO Do:
+# 15.01.2017 19:55:19
+# zapewne ujednolicenie komentarzy do języka polskiego
+# zapewne nazwy metod po angielsku (tak mi sie wydaje)
+#
+#
 
 from pyfirmata import Arduino, util, OUTPUT
 import sys
