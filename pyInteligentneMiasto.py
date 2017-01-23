@@ -121,10 +121,20 @@ class pyIntelligentCity(object):
                 device_type.add(1)
             else: # nieznane urządzenie lub pusty port
                 return 0
-        # po przejściu wszystkich 4 portów zapisujemy słownik definiujący typy oraz opisy urządzeń
-        self.Devices = { 0 : device_type[0], 1 : device_type[1], 2 : device_type[2], 3 : device_type[3] }
-        self.DevicesNames = { 0: self.DefDevicesNames[device_type[0]], 1: self.DefDevicesNames[device_type[1]],
-                                2: self.DefDevicesNames[device_type[2]], 3: self.DefDevicesNames[device_type[3]], }
+        # po przejściu wszystkich 4 portów zapisujemy słownik definiujący
+        # typy oraz opisy urządzeń
+        self.Devices = {
+                        0: device_type[0],
+                        1: device_type[1],
+                        2: device_type[2],
+                        3: device_type[3]
+                        }
+        self.DevicesNames = {
+                            0: self.DefDevicesNames[device_type[0]],
+                            1: self.DefDevicesNames[device_type[1]],
+                            2: self.DefDevicesNames[device_type[2]],
+                            3: self.DefDevicesNames[device_type[3]],
+                            }
         # over
 
     def IsCityConnected(self):
@@ -136,25 +146,24 @@ class pyIntelligentCity(object):
     def IsLampConnected(self):
         return self.IsLampConnected
 
-
     def info(self):
         '''
-        Wypisujemy wszystkie informacje o podłączonym mieście, o ile w ogóle jest
+        Wypisujemy wszystkie informacje o podłączonym mieście,
+        o ile w ogóle jest
         '''
         if not self.IsCity:
             print('There is NO City connected. Bye bye ...')
             return False
         else:
-            print('There is city connected at port: '+ self.ComPort)
+            print('There is city connected at port: ' + self.ComPort)
             return True
 
     ############################
     # Sterowanie ...
-    def LampaUliczna_Red(self,state):
+    def LampaUliczna_Red(self, state):
         for pos in self.Devices.listitems():
             x, y = pos
             # tu dokończyć.......
-
 
 
 def main(args):
@@ -164,6 +173,6 @@ def main(args):
     city.info()
     return 0
 
+
 if __name__ == '__main__':
-    import sys
     sys.exit(main(sys.argv))
