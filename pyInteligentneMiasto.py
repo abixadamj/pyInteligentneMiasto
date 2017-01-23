@@ -119,7 +119,7 @@ class pyIntelligentCity(object):
                 device_type.add(2)
             elif a <= 600 and a >= 100:  # lampa uliczna (lub pusty port!)
                 device_type.add(1)
-            else: # nieznane urządzenie lub pusty port
+            else:  # nieznane urządzenie lub pusty port
                 return 0
         # po przejściu wszystkich 4 portów zapisujemy słownik definiujący
         # typy oraz opisy urządzeń
