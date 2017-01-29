@@ -51,13 +51,13 @@ class pyIntelligentCity(object):
         self.Devices = None
         self.DevicesNames = None
         self.DefDevicesNames = [
+            'Not implemented ;-) Yet.... ',
             'Lampa uliczna',
             'Czujnik przejazdu',
             'Zapora kolejowa',
             'Sygnalizator kolejowy',
             'Sygnalizator dla pieszych',
             'Sygnalizator drogowy',
-            'Not implemented ;-) Yet.... ',
         ]
 
         # test
