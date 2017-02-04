@@ -13,22 +13,18 @@ wybrane z siedmiu elementów:
 
 ##BIBLIOTEKA:
 
-city.py 
-Moduł wykorzystywany jest przez pozostałe moduły. łączy program ze sterownikiem Arduino przez port szeregowy,
+*city.py* - moduł wykorzystywany jest przez pozostałe moduły. łączy program ze sterownikiem Arduino przez port szeregowy,
 wykrywa urządzenia podłączone do portów sterownika i wyświetla informacje o tych urządzeniach.
 Tworzy zmienną globalną wykorzystywaną w module 'barrier' do pamiętania stanu zapory kolejowej.
 
-barrier.py
-Moduł obsługuje dwa urządzenia: zaporę kolejową i czujnik przejazdu.
+*barrier.py* - moduł obsługuje dwa urządzenia: zaporę kolejową i czujnik przejazdu.
 Dostępne w moduje funkcje umożliwiają zamykanie i otwieranie zapory kolejowej, generowanie sygnału
 ostrzegawczego (buzzer w układzie zapory) i wykrywanie przejeżdżajżcego pociągu (czujnik przejazdu).
 
-lamp.py
-Moduł obsługuje latarnię uliczną i jego funkcje umożliwiają włączanie latarni z pełną mocą lub z połową mocy
+*lamp.py* - moduł obsługuje latarnię uliczną i jego funkcje umożliwiają włączanie latarni z pełną mocą lub z połową mocy
 (tryb ekonomiczny), wylączanie latarni oraz wykrywanie poziomu natężenia światła (ciemno/jasno).
 
-pedestrian_light.py
-Moduł obsługuje sygnalizator świetlny dla pieszych z przyciskiem żądania zmiany światła.
+*pedestrian_light.py* - moduł obsługuje sygnalizator świetlny dla pieszych z przyciskiem żądania zmiany światła.
 
 traffic_light.py
 Moduł obsługuje pierwszy (wpięty do portu o niższym numerze) sygnalizator drogowy
