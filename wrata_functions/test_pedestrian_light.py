@@ -23,7 +23,7 @@ try:
     while True:
         # Sprawdzanie czy pieszy zarządał zmiany światła na zielone
         if pedestrian_light.is_pressed():
-            print 'Pieszy na krawężniku'
+            print u'Pieszy na krawężniku'
             # Pieszy nacisnął przycisk - za pół sekundy rozpocznie się zmiana świateł
             sleep(0.5)
             # Żółte światło dla pojazdów 
@@ -33,18 +33,18 @@ try:
             # Czerwone światło dla pojazdów
             traffic_light.red_on()
             traffic_light.yellow_off()
-            print 'Pojazdy stoją!'
+            print u'Pojazdy stoją!'
             sleep(0.5)
             # Zielone światło dla pieszego
             pedestrian_light.red_off()
             pedestrian_light.green_on()
-            print 'Pieszy przechodzi'
+            print u'Pieszy przechodzi'
             sleep(3)
             # Pulsujące światło zielone dla pieszego
             pedestrian_light.green_blink() # domyślnie 2 s
             # Czerwone światło dla pieszego
             pedestrian_light.red_on()
-            print 'Uwaga kierowcy'
+            print u'Uwaga kierowcy'
             # Zółte i czerwone światło dla pojazdów
             traffic_light.yellow_on()
             sleep(0.5)
@@ -54,7 +54,7 @@ try:
             traffic_light.green_on()
         else:
             # Ten stan będzie się powtarzał aż do wykrycia kolejnego żądania zmiany świateł przez pieszych
-            print 'Można spokojnie jechać'    
+            print u'Można jechać'    
         sleep(1);
 
 except KeyboardInterrupt:
