@@ -1,8 +1,8 @@
-#Program do obsługi zestawu edukacyjnego Inteligentne Miasto (IM)
+# Program do obsługi zestawu edukacyjnego Inteligentne Miasto (IM)
 
-Sterownik: ArduinoUno z wgranym oprogramowaniem Standard Firmata i nak�adk� (shieldem) IM.
-Do sterownika mo�na maksymalnie pod��czy� cztery urz�dzenia (za pomoc� sze�cio�y�owych przewod�w z gniazdami IDC), 
-wybrane z siedmiu element�w:
+Sterownik: ArduinoUno z wgranym oprogramowaniem Standard Firmata i nakładką (shieldem) IM.
+Do sterownika można maksymalnie podłączyć cztery urządzenia (za pomocą sześciożyłowych przewodów z gniazdami IDC), 
+wybrane z siedmiu elementów:
 * latarnia uliczna - diody LED (2 x po 3 szt.) i fototranzystor do pomiaru nat��enia �wiat�a
 * czujnik przejazdu - dioda LED IR (emituj�ca promieniowanie podczerwone) i fototranzystor wykrywaj�cy wi�zk� promieni IR
 * zapora kolejowa - serwo umo�liwiaj�ce ustawienie zapory pod dowolnym k�tem (90 - zapora otwarta, 0 lub 180 - zamkni�ta)
