@@ -19,16 +19,16 @@ wykrywa urządzenia podłączone do portów sterownika i wyświetla informacje o
 Tworzy zmienną globalną wykorzystywaną w module 'barrier' do pamiętania stanu zapory kolejowej.
 
 barrier.py
-Modu� obs�uguje dwa urz�dzenia: zapor� kolejow� i czujnik przejazdu.
-Dost�pne w moduje funkcje umo�liwiaj� zamykanie i otwieranie zapory kolejowej, generowanie sygna�u
-ostrzegawczego (buzzer w uk�adzie zapory) i wykrywanie przeje�d�aj�cego poci�gu (czujnik przejazdu).
+Moduł obsługuje dwa urządzenia: zaporę kolejową i czujnik przejazdu.
+Dostępne w moduje funkcje umożliwiają zamykanie i otwieranie zapory kolejowej, generowanie sygnału
+ostrzegawczego (buzzer w układzie zapory) i wykrywanie przejeżdżajżcego pociągu (czujnik przejazdu).
 
 lamp.py
-Modu� obs�uguje latarni� uliczn� i jego funkcje umo�liwiaj� w��czanie latarni z pe�n� moc� lub z po�ow� mocy
-(tryb ekonomiczny), wy��czanie latarni oraz wykrywanie poziomu nat��enia �wiat�a (ciemno/jasno).
+Moduł obsługuje latarnię uliczną i jego funkcje umożliwiają włączanie latarni z pełną mocą lub z połową mocy
+(tryb ekonomiczny), wylączanie latarni oraz wykrywanie poziomu natężenia światła (ciemno/jasno).
 
 pedestrian_light.py
-Modu� obs�uguje sygnalizator �wietlny dla pieszych z przyciskiem ��dania zmiany �wiat�a.
+Moduł obsługuje sygnalizator świetlny dla pieszych z przyciskiem żądania zmiany światła.
 
 traffic_light.py
 Modu� obs�uguje pierwszy (wpi�ty do portu o ni�szym numerze) sygnalizator drogowy
