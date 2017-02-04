@@ -1,6 +1,8 @@
 ##Program do obsługi zestawu edukacyjnego Inteligentne Miasto (IM)
 
-Sterownik: ArduinoUno z wgranym oprogramowaniem Standard Firmata i nakładką (shieldem) IM.
+##Sterownik:
+
+ArduinoUno z wgranym oprogramowaniem Standard Firmata i nakładką (shieldem) IM.
 Do sterownika można maksymalnie podłączyć cztery urządzenia (za pomocą sześciożyłowych przewodów z gniazdami IDC), 
 wybrane z siedmiu elementów:
 * latarnia uliczna - diody LED (2 x po 3 szt.) i fototranzystor do pomiaru natężenia światła
@@ -13,7 +15,7 @@ wybrane z siedmiu elementów:
 
 ##BIBLIOTEKA:
 
-*city.py* - moduł wykorzystywany jest przez pozostałe moduły. łączy program ze sterownikiem Arduino przez port szeregowy,
+*city.py* - moduł jest wykorzystywany przez pozostałe moduły. łączy program ze sterownikiem Arduino przez port szeregowy,
 wykrywa urządzenia podłączone do portów sterownika i wyświetla informacje o tych urządzeniach.
 Tworzy zmienną globalną wykorzystywaną w module 'barrier' do pamiętania stanu zapory kolejowej.
 
@@ -26,21 +28,25 @@ ostrzegawczego (buzzer w układzie zapory) i wykrywanie przejeżdżajżcego poci
 
 *pedestrian_light.py* - moduł obsługuje sygnalizator świetlny dla pieszych z przyciskiem żądania zmiany światła.
 
-traffic_light.py
+*traffic_light.py*
 Moduł obsługuje pierwszy (wpięty do portu o niższym numerze) sygnalizator drogowy
 lub pojedynczy sygnalizator (zestaw zawiera dwa sygnalizatory drogowe).
 
-traffic_light2.py
-Moduł obsługuje drugi (wpięty do portu o wyższym numerze) sygnalizator drogowy
+*traffic_light2.py* - moduł obsługuje drugi (wpięty do portu o wyższym numerze) sygnalizator drogowy
 lub pojedynczy sygnalizator.
 
-train_light.py
-Moduł obsługuje światła na niestrzeżonym przejeździe kolejowym.
+*train_light.py* - moduł obsługuje światła na niestrzeżonym przejeździe kolejowym.
 
 ##PRZYKŁADY STEROWANIA ELEMENTAMI IM:
-test_barrier.py
-test_lamp.py
-test_pedestrian_light.py
-test_traffic_light_1.py
-test_traffic_light_2.py
-test_train_light.py
+
+*test_barrier.py* - 
+
+*test_lamp.py* - 
+
+*test_pedestrian_light.py* -
+
+*test_traffic_light_1.py* -
+
+*test_traffic_light_2.py* -
+
+*test_train_light.py* -
