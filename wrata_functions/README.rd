@@ -1,4 +1,4 @@
-# Program do obsługi zestawu edukacyjnego Inteligentne Miasto (IM)
+Program do obsługi zestawu edukacyjnego Inteligentne Miasto (IM)
 
 Sterownik: ArduinoUno z wgranym oprogramowaniem Standard Firmata i nakładką (shieldem) IM.
 Do sterownika można maksymalnie podłączyć cztery urządzenia (za pomocą sześciożyłowych przewodów z gniazdami IDC), 
@@ -31,11 +31,11 @@ pedestrian_light.py
 Moduł obsługuje sygnalizator świetlny dla pieszych z przyciskiem żądania zmiany światła.
 
 traffic_light.py
-Modu� obs�uguje pierwszy (wpi�ty do portu o ni�szym numerze) sygnalizator drogowy
+Moduł obsługuje pierwszy (wpięty do portu o niższym numerze) sygnalizator drogowy
 lub pojedynczy sygnalizator (zestaw zawiera dwa sygnalizatory drogowe).
 
 traffic_light2.py
-Modu� obs�uguje drugi (wpi�ty do portu o wy�szym numerze) sygnalizator drogowy
+Moduł obsługuje drugi (wpięty do portu o wyższym numerze) sygnalizator drogowy
 lub pojedynczy sygnalizator.
 
 train_light.py
