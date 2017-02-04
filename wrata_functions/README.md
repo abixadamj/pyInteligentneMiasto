@@ -1,6 +1,6 @@
 ##Program do obsługi zestawu edukacyjnego Inteligentne Miasto (IM)
 
-##Sterownik:
+###Sterownik
 
 *ArduinoUno* z wgranym oprogramowaniem *Standard Firmata* i nakładką (shieldem) *Inteligentne Miasto*.
 Do sterownika można maksymalnie podłączyć cztery urządzenia (za pomocą sześciożyłowych przewodów z gniazdami IDC), 
@@ -13,7 +13,7 @@ wybrane z siedmiu elementów:
 * *sygnalizator świetlny dla pieszych* - diody czerwona i zielona oraz przycisk żądania zmiany stanu sygnałów
 * *sygnalizator świetlny dla pojazdów* (2 szt.) -  diody czerwona, żółta i zielona
 
-##BIBLIOTEKA:
+###Biblioteka
 
 *city.py* - moduł jest wykorzystywany przez pozostałe moduły. łączy program ze sterownikiem Arduino przez port szeregowy,
 wykrywa urządzenia podłączone do portów sterownika i wyświetla informacje o tych urządzeniach.
@@ -37,7 +37,7 @@ lub pojedynczy sygnalizator.
 
 *train_light.py* - moduł obsługuje światła na niestrzeżonym przejeździe kolejowym.
 
-##PRZYKŁADY STEROWANIA ELEMENTAMI IM:
+###Przykłady sterowania elementami zestawu IM
 
 *test_barrier.py* - 
 
