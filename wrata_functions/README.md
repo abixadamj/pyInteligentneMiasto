@@ -16,7 +16,7 @@ wybrane z siedmiu elementów:
 <hr />
 ###Biblioteka
 
-*city.py* - moduł jest wykorzystywany przez pozostałe moduły. łączy program ze sterownikiem Arduino przez port szeregowy,
+*city.py* - główny moduł wykorzystywany przez pozostałe moduły. Łączy program ze sterownikiem Arduino przez port szeregowy,
 wykrywa urządzenia podłączone do portów sterownika i wyświetla informacje o tych urządzeniach.
 Tworzy zmienną globalną wykorzystywaną w module 'barrier' do pamiętania stanu zapory kolejowej.
 
