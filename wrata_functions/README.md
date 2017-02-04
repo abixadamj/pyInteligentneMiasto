@@ -18,7 +18,7 @@ wybrane z siedmiu elementów:
 
 *city.py* - główny moduł wykorzystywany przez pozostałe moduły. Łączy program ze sterownikiem Arduino przez port szeregowy,
 wykrywa urządzenia podłączone do portów sterownika i wyświetla informacje o tych urządzeniach.
-Tworzy zmienną globalną wykorzystywaną w module 'barrier' do pamiętania stanu zapory kolejowej.
+Tworzy zmienną globalną wykorzystywaną w module *barrier* do pamiętania stanu zapory kolejowej.
 
 *barrier.py* - moduł obsługuje dwa urządzenia: zaporę kolejową i czujnik przejazdu.
 Dostępne w moduje funkcje umożliwiają zamykanie i otwieranie zapory kolejowej, generowanie sygnału
@@ -45,10 +45,10 @@ lub pojedynczy sygnalizator.
 
 *test_lamp.py* - przykład sterowania *latarnią uliczną* z czujnikiem natężenia światła w otoczeniu.
 
-*test_pedestrian_light.py* - Przykład wykorzystania *sygnalizatora na przejściu dla pieszych* współpracującego z *sygnalizatorem drogowym* dla samochodów. Zielone światło dla pieszych włączane jest na żądanie, po maciśnięciu przycisku w sygnalizatorze. Światła *sygnalizatora drogowego* są zsynchronizowane z światłem *sygnalizatora dla pieszych*.
+*test_pedestrian_light.py* - przykład wykorzystania *sygnalizatora na przejściu dla pieszych* współpracującego z *sygnalizatorem drogowym* dla samochodów. Zielone światło dla pieszych włączane jest na żądanie, po maciśnięciu przycisku w sygnalizatorze. Światła *sygnalizatora drogowego* są zsynchronizowane z światłem *sygnalizatora dla pieszych*.
 
-*test_traffic_light_1.py* -
+*test_traffic_light_1.py* - przykład sterowania *sygnalizatorem drogowym* - cykliczna zmiana świateł.
 
-*test_traffic_light_2.py* -
+*test_traffic_light_2.py* - przykład sterowania dwoma *sygnalizatorami drogowymi* z cykliczną zmianą świateł na skrzyżowaniu.
 
-*test_train_light.py* -
+*test_train_light.py* - przykład sterowania *sygnalizatorem kolejowym* ustawionym przed niestrzeżonym przejazdem kolejowym i współpracującym  z *czujnikiem przejazdu*, który wykrywa nadjeżdżający pociąg.
