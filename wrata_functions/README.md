@@ -1,5 +1,4 @@
-#Program do obsługi zestawu edukacyjnego<br />Inteligentne Miasto (IM)
-<hr />
+#Program do obsługi zestawu edukacyjnego<br />Inteligentne Miasto (IM)<hr />
 ###Sterownik
 
 *ArduinoUno* z wgranym oprogramowaniem *Standard Firmata* i nakładką (shieldem) *Inteligentne Miasto*.
