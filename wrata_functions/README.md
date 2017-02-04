@@ -12,7 +12,7 @@ wybrane z siedmiu elementów:
 * *sygnalizator kolejowy* (dla niestrzeżonego przejazdu) - dwie czerwone diody LED
 * *sygnalizator świetlny dla pieszych* - diody czerwona i zielona oraz przycisk żądania zmiany stanu sygnałów
 * *sygnalizator świetlny dla pojazdów* (2 szt.) -  diody czerwona, żółta i zielona
-![rys](www.biblioteka.lesko.pl/gopro/f02_17/001.jpg)
+![rys](http://www.biblioteka.lesko.pl/gopro/f02_17/001.jpg)
 <hr />
 ###Biblioteka
 
