@@ -10,7 +10,7 @@ from pyfirmata import INPUT, OUTPUT, SERVO
 from time import sleep
 
 def open():
-    "podniesienie (otwarcie) zapory kolejowej"
+    '''Podniesienie (otwarcie) zapory kolejowej'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -25,7 +25,7 @@ def open():
     return p
 
 def close_left():
-    "zamknięcie zapory w lewo"
+    '''Zamknięcie zapory w lewo'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -39,7 +39,7 @@ def close_left():
     return p
 
 def close_right():
-    "zamknięcie zapory w prawo"
+    '''Zamknięcie zapory w prawo'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -53,7 +53,7 @@ def close_right():
     return p
 
 def beacon():
-    "sygnał ostrzegawczy"
+    '''Sygnał ostrzegawczy'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -71,7 +71,7 @@ def beacon():
     return p
 
 def is_train():
-    "detekcja przejeżdząjącego pociągu - czujnik przejazdu"
+    '''Detekcja przejeżdząjącego pociągu - czujnik przejazdu'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
