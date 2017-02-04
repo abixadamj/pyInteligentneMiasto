@@ -27,7 +27,7 @@ try:
     sleep(2)
 
     barrier.close_right()
-    print u'zamknięta w prawo'
+    print u'zapora zamknięta w prawo'
     sleep(2)
 
     barrier.open()
