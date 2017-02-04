@@ -1,4 +1,4 @@
-#Program do obsługi zestawu edukacyjnego Inteligentne Miasto (IM)
+#Program do obsługi zestawu edukacyjnego<br />Inteligentne Miasto (IM)
 <hr />
 ###Sterownik
 
