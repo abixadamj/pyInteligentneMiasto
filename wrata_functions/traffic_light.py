@@ -7,7 +7,7 @@ from time import sleep
 import city
 
 def off():
-    "Wyłączenie wszystkich świateł"
+    '''Wyłączenie wszystkich świateł'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -21,7 +21,7 @@ def off():
     return p
 
 def red_on():
-    "Włączenie czerwonego światła"
+    '''Włączenie czerwonego światła'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -33,7 +33,7 @@ def red_on():
     return p
 
 def red_off():
-    "Wyłączenie czerwonego światła"
+    '''Wyłączenie czerwonego światła'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -45,7 +45,7 @@ def red_off():
     return p
 
 def yellow_on():
-    "Włączenie żółtego światła"
+    '''Włączenie żółtego światła'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -57,7 +57,7 @@ def yellow_on():
     return p
 
 def yellow_off():
-    "Wyłączenie żółtego światła"
+    '''Wyłączenie żółtego światła'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -69,7 +69,7 @@ def yellow_off():
     return p
 
 def yellow_blink(count = 3):
-    "Włączenie żółtego pulsującego światła - domyślnie 3 błyski"
+    '''Włączenie żółtego pulsującego światła - domyślnie 3 błyski'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -85,7 +85,7 @@ def yellow_blink(count = 3):
     return p
 
 def green_on():
-    "Włączenie zielonego światła"
+    '''Włączenie zielonego światła'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -97,7 +97,7 @@ def green_on():
     return p
 
 def green_off():
-    "Wyłączenie zielonego światła"
+    '''Wyłączenie zielonego światła'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
