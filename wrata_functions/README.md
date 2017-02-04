@@ -41,11 +41,11 @@ lub pojedynczy sygnalizator.
 <hr />
 ###Przykłady sterowania elementami zestawu IM
 
-*test_barrier.py* - 
+*test_barrier.py* - przykład sterowania *zaporą kolejową* i *czujnikiem przejazdu*.
 
-*test_lamp.py* - 
+*test_lamp.py* - przykład sterowania *latarnią uliczną* z czujnikiem natężenia światła w otoczeniu.
 
-*test_pedestrian_light.py* -
+*test_pedestrian_light.py* - Przykład wykorzystania *sygnalizatora na przejściu dla pieszych* współpracującego z *sygnalizatorem drogowym* dla samochodów. Zielone światło dla pieszych włączane jest na żądanie, po maciśnięciu przycisku w sygnalizatorze. Światła *sygnalizatora drogowego* są zsynchronizowane z światłem *sygnalizatora dla pieszych*.
 
 *test_traffic_light_1.py* -
 
