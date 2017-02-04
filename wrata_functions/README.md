@@ -2,16 +2,16 @@
 
 ##Sterownik:
 
-ArduinoUno z wgranym oprogramowaniem Standard Firmata i nakładką (shieldem) IM.
+*ArduinoUno* z wgranym oprogramowaniem *Standard Firmata* i nakładką (shieldem) *Inteligentne Miasto*.
 Do sterownika można maksymalnie podłączyć cztery urządzenia (za pomocą sześciożyłowych przewodów z gniazdami IDC), 
 wybrane z siedmiu elementów:
-* latarnia uliczna - diody LED (2 x po 3 szt.) i fototranzystor do pomiaru natężenia światła
-* czujnik przejazdu - dioda LED IR (emitująca promieniowanie podczerwone) i fototranzystor wykrywający wiązkę promieni IR
-* zapora kolejowa - serwo umożliwiające ustawienie zapory pod dowolnym kątem (90 - zapora otwarta, 0 lub 180 - zamknięta)
+* *latarnia uliczna* - diody LED (2 x po 3 szt.) i fototranzystor do pomiaru natężenia światła
+* *czujnik przejazdu* - dioda LED IR (emitująca promieniowanie podczerwone) i fototranzystor wykrywający wiązkę promieni IR
+* *zapora kolejowa* - serwo umożliwiające ustawienie zapory pod dowolnym kątem (90 - zapora otwarta, 0 lub 180 - zamknięta)
   i sygnalizacja dźwiękowa (buzzer)
-* sygnalizator kolejowy (dla niestrzeżonego przejazdu) - dwie czerwone diody LED
-* sygnalizator świetlny dla pieszych - diody czerwona i zielona oraz przycisk żądania zmiany stanu sygnałów
-* sygnalizator świetlny dla pojazdów (2 szt.) -  diody czerwona, żółta i zielona
+* *sygnalizator kolejowy* (dla niestrzeżonego przejazdu) - dwie czerwone diody LED
+* *sygnalizator świetlny dla pieszych* - diody czerwona i zielona oraz przycisk żądania zmiany stanu sygnałów
+* *sygnalizator świetlny dla pojazdów* (2 szt.) -  diody czerwona, żółta i zielona
 
 ##BIBLIOTEKA:
 
