@@ -9,7 +9,7 @@ from pyfirmata import INPUT, OUTPUT
 from time import sleep
 
 def red_on():
-    "Włączenie światła czerwonego"
+    '''Włączenie światła czerwonego'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -22,7 +22,7 @@ def red_on():
     return p
 
 def red_off():
-    "Wyłączenie światła czerwonego"
+    '''Wyłączenie światła czerwonego'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -34,7 +34,7 @@ def red_off():
     return p
 
 def green_on():
-    "Włączenie światła zielonego"
+    '''Włączenie światła zielonego'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -46,7 +46,7 @@ def green_on():
     return p
 
 def green_off():
-    "Wyłączenie światła zielonego"
+    '''Wyłączenie światła zielonego'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -58,7 +58,7 @@ def green_off():
     return p
 
 def green_blink(count = 2):
-    "Włączenie pulsującego światła zielonego - domyślnie 2 s"
+    '''Włączenie pulsującego światła zielonego - domyślnie 2 s'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -75,7 +75,7 @@ def green_blink(count = 2):
     return p
 
 def is_pressed():
-    "Odczytywanie stanu przycisku w sygnalizatorze"
+    '''Odczytywanie stanu przycisku w sygnalizatorze'''
     p = 0    
     while p < 4:
         a = city.read_port(p)

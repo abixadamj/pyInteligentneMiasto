@@ -13,14 +13,14 @@ city.info()
 
 # Wyłączenie sygnalizatora
 traffic_light.off()
-print 'Test sygnalizatora'
-print ' Światło żółte pulsujące - 15 s\n'
+print u'Test sygnalizatora'
+print u'Światło żółte pulsujące - 15 s\n'
 
 # Światło żółte pulsujące 15 s
 traffic_light.yellow_blink(15)
 
 try:
-    print 'Cykliczna zmiana świateł (Ctrl+C - zakończenie programu)'
+    print u'Cykliczna zmiana świateł (Ctrl+C - zakończenie programu)'
     while True:
         # Światło czerwone 5 s
         traffic_light.red_on()

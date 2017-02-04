@@ -6,7 +6,7 @@ import city
 from time import sleep
 
 def off():
-    " Wyłączenie obu świateł w sygnalizatorze na przejeździe kolejowym"
+    '''Wyłączenie obu świateł w sygnalizatorze na przejeździe kolejowym'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -19,7 +19,7 @@ def off():
     return p
 
 def on():
-    " Włączenie obu świateł w sygnalizatorze na przejeździe kolejowym"
+    '''Włączenie obu świateł w sygnalizatorze na przejeździe kolejowym'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -32,7 +32,7 @@ def on():
     return p
 
 def right_on():
-    " Włączenie prawego światła w sygnalizatorze na przejeździe kolejowym"
+    '''Włączenie prawego światła w sygnalizatorze na przejeździe kolejowym'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -44,7 +44,7 @@ def right_on():
     return p
 
 def right_off():
-    " Wyłączenie prawego światła w sygnalizatorze na przejeździe kolejowym"
+    '''Wyłączenie prawego światła w sygnalizatorze na przejeździe kolejowym'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -68,7 +68,7 @@ def left_on():
     return p
 
 def left_off():
-    " Wyłączenie lewego światła w sygnalizatorze na przejeździe kolejowym"
+    '''Wyłączenie lewego światła w sygnalizatorze na przejeździe kolejowym'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -80,8 +80,8 @@ def left_off():
     return p
 
 def blink(count = 5):
-    """ Pulsujące naprzemiennie światła w sygnalizatorze na przejeździe kolejowym
-         (domyślnie pięć powtórzeń) """
+    '''Pulsujące naprzemiennie światła w sygnalizatorze na przejeździe kolejowym
+         (domyślnie pięć powtórzeń)'''
     p = 0    
     while p < 4:
         a = city.read_port(p)

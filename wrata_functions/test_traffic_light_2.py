@@ -17,16 +17,16 @@ city.info()
 traffic_light.off()
 traffic_light2.off()
 
-print 'Test sygnalizatora nr 1'
-print ' Światło żółte pulsujące - 5 s\n'
+print u'Test sygnalizatora nr 1'
+print u' Światło żółte pulsujące - 5 s\n'
 # Światło żółte pulsujące 5 s
 traffic_light.yellow_blink(5)
-print 'Test sygnalizatora nr 2'
-print ' Światło żółte pulsujące - 5 s\n'
+print u'Test sygnalizatora nr 2'
+print u' Światło żółte pulsujące - 5 s\n'
 # Światło żółte pulsujące 5 s
 traffic_light2.yellow_blink(5)
 
-print 'Światło żółte pulsujące na skrzyżowaniu - 10 s'
+print u'Światło żółte pulsujące na skrzyżowaniu - 10 s'
 for i in range(10):
     traffic_light.yellow_on()
     traffic_light2.yellow_on()
@@ -36,7 +36,7 @@ for i in range(10):
     sleep(0.5);
     
 try:
-    print 'Cykliczna zmiana świateł na skrzyżowaniu (Ctrl+C - zakończenie programu)'
+    print u'Cykliczna zmiana świateł na skrzyżowaniu (Ctrl+C - zakończenie programu)'
     while True:
         # Światło czerwone / światło zielone - 5 s
         traffic_light.yellow_off()

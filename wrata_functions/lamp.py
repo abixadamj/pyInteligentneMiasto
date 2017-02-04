@@ -10,7 +10,7 @@ from time import sleep
 import city
 
 def on():
-    "Włączenie lampy"
+    '''Włączenie lampy'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -23,7 +23,7 @@ def on():
     return p      
 
 def off():
-    "Wyłączenie lampy"
+    '''Wyłączenie lampy'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -36,7 +36,7 @@ def off():
     return p
 
 def on_eco():
-    "Włączenie lampy w trybie oszczędnościowym (połowa diod)"
+    '''Włączenie lampy w trybie oszczędnościowym (połowa diod)'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
@@ -49,7 +49,7 @@ def on_eco():
     return p
 
 def is_dark():
-    "Wykrywanie poziomu natężenia światła w otoczeniu lampy"
+    '''Wykrywanie poziomu natężenia światła w otoczeniu lampy'''
     p = 0    
     while p < 4:
         a = city.read_port(p)
