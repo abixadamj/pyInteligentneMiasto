@@ -12,7 +12,6 @@ wybrane z siedmiu elementów:
 * *sygnalizator świetlny dla pieszych* - diody czerwona i zielona oraz przycisk żądania zmiany stanu sygnałów
 * *sygnalizator świetlny dla pojazdów* (2 szt.) -  diody czerwona, żółta i zielona
 
-
 ![rys](http://www.biblioteka.lesko.pl/gopro/f02_17/001.jpg)
 
 <hr />
@@ -31,8 +30,7 @@ ostrzegawczego (buzzer w układzie zapory) i wykrywanie przejeżdżajżcego poci
 
 *pedestrian_light.py* - moduł obsługuje sygnalizator świetlny dla pieszych z przyciskiem żądania zmiany światła.
 
-*traffic_light.py*
-Moduł obsługuje pierwszy (wpięty do portu o niższym numerze) sygnalizator drogowy
+*traffic_light.py* - moduł obsługuje pierwszy (wpięty do portu o niższym numerze) sygnalizator drogowy
 lub pojedynczy sygnalizator (zestaw zawiera dwa sygnalizatory drogowe).
 
 *traffic_light2.py* - moduł obsługuje drugi (wpięty do portu o wyższym numerze) sygnalizator drogowy
