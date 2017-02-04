@@ -10,7 +10,7 @@ from pyfirmata import Arduino, util, OUTPUT
 from time import sleep
 
 # Otwiera połączenie z Arduino
-board = Arduino('COM22') # Wpisz odpowiednią nazwę portu
+board = Arduino('COM22') # Wpisz odpowiednią nazwę portu szeregowego
 iterator = util.Iterator(board)
 iterator.start()
 
@@ -18,12 +18,12 @@ iterator.start()
 global isBarrierOpen
 isBarrierOpen = False
 
-# Otwiera pinów analogowe A0, A1, A2 i A3 do odczytu danych w celu dekodowania urządzeń
+# Otwiera piny analogowe A0, A1, A2 i A3 do odczytu danych w celu dekodowania urządzeń
 for x in [0, 1, 2, 3]:
     board.analog[x].enable_reporting()
 
 def device_detect (a): 
-    "Zwraca kod urządzenia. Parametr a = 0..1023 - odczytany z piny analogowego w porcie urządzenia" 
+    '''Zwraca kod urządzenia. Parametr a = 0..1023 - odczytany z pinu analogowego w porcie urządzenia'''
     if a <=1010 and a >=990: # sygnalizator drogowy
         return 6
     elif a <=985 and a >=965: # sygnalizator dla pieszych
@@ -40,7 +40,7 @@ def device_detect (a):
         return 0 
 
 def device_name (kod):
-    "Zwraca nazwę urządzenia o podanym kodzie - parametr kod"
+    '''Zwraca nazwę urządzenia o podanym kodzie - parametr kod'''
     if kod == 6:
         return 'sygnalizator drogowy'
     elif kod == 5:
@@ -57,24 +57,24 @@ def device_name (kod):
         return 'Hmm, tego ustrojstwa nie znam :('
 
 def read_port(p):
-    "Zwraca wartość odczytaną z pinu analogowego w porcie p, (p = 0, 1, 2 i 3)"
+    '''Zwraca wartość odczytaną z pinu analogowego w porcie p, (p = 0, 1, 2 i 3)'''
     odp = board.analog[p].read()
     while type(odp) != float:
         odp = board.analog[p].read()
     return int(odp * 1023)
 
 def info():
-    "Wyświetla listę urządzeń podłączonych do Arduino"
-    print 'Inteligentne Miasto - urządzenia gotowe do pracy:'
+    '''Wyświetla listę urządzeń podłączonych do Arduino'''
+    print u'Inteligentne Miasto - urządzenia gotowe do pracy:'
     for p in [0, 1, 2, 3]:
         print 'Port', p, ': ', device_name(device_detect(read_port(p)))
 
 def close():
-    "Wyłącza wszystkie urządzenia i zamyka połączenie z Arduino"
+    '''Wyłącza wszystkie urządzenia i zamyka połączenie z Arduino'''
     for p in range(2, 14):
         board.digital[p].mode = OUTPUT
         board.digital[p].write(0)
-    print 'Inteligentne Miasto odłączone!'
+    print u'Inteligentne Miasto odłączone!'
     board.exit()   
 
 if __name__ == "__main__":
